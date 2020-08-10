@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromium Web Audio Synthesis</title>
+</head>
+<body>
+    <div class="text2speech">
+        <div>
+            <textarea cols="30" rows="10" id="txt"></textarea><br>
+            <select id="voices"></select><br>
+            Pitch : <span id="pitchval">1</span>
+            <input type="range" min="0.5" value="1" step="0.05" max="2" id="pitch"><br>
+            Rate : <span id="rateval">1</span>
+            <input type="range" min="0" max="2" step="0.05" value="1" id="rate"><br>
+            <button id="speak">Speak</button>
+        </div>
+    </div>
+    <script src="./main-speech.js"></script>
+    <script src="./speech2txt.js"></script>
+</body>
+</html>
